@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 4.10.2, 2019-12-06T20:33:11. -->
+<!-- Written by QtCreator 4.10.2, 2019-12-07T11:41:24. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -304,8 +304,8 @@
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
     <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">JarvisConvexHull</value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName"></value>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/rtn/dev/cpp/qt/JarvisConvexHull/JarvisConvexHull.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">JarvisConvexHull2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/home/rtn/dev/cpp/qt/ComputerGraphics/JarvisConvexHull/JarvisConvexHull.pro</value>
     <value type="QString" key="RunConfiguration.Arguments"></value>
     <value type="uint" key="RunConfiguration.QmlDebugServerPort">3768</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>

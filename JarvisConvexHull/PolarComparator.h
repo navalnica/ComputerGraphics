@@ -24,6 +24,11 @@ struct PolarComparator {
         double dyl = lhs.y() - pivot_point.y();
         double dyr = rhs.y() - pivot_point.y();
 
+        // check if rhs == lhs
+        if((fabs(lhs.x() - rhs.x()) < EPS) && (fabs(lhs.y() - rhs.y()) < EPS)){
+            return false;
+        }
+
         // check if the point is the pivot point
         if ((fabs(dxl) < EPS) && (fabs(dyl) < EPS)) { return true; }
         if ((fabs(dxr) < EPS) && (fabs(dyr) < EPS)) { return false; }

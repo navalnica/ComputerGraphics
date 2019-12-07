@@ -71,6 +71,10 @@ vector<QPointF> JarvisConvexHull::get_jarvis_convex_hull(vector<QPointF> &points
         bool has_min_x = fabs(cur.x() - leftmost.x()) < EPS;
         sort(points.begin(), points.end(), PolarComparator(cur, has_max_x, has_min_x));
         for (size_t i = 1; i < points.size(); ++i) {
+            if(fabs(points[i].x() - cur.x()) < EPS && fabs(points[i].y() - cur.y()) < EPS){
+                // ignore duplicated points
+                continue;
+            }
             if (points[i].x() >= cur.x()) {
                 hull.push_back(cur);
                 cur = points[i];
@@ -85,6 +89,10 @@ vector<QPointF> JarvisConvexHull::get_jarvis_convex_hull(vector<QPointF> &points
         sort(points.begin(), points.end(), PolarComparator(cur, has_max_x, has_min_x));
         size_t i = 1;
         for (i; i < points.size(); ++i) {
+            if(fabs(points[i].x() - cur.x()) < EPS && fabs(points[i].y() - cur.y()) < EPS){
+                // ignore duplicated points
+                continue;
+            }
             if (points[i].x() <= cur.x()) {
                 hull.push_back(cur);
                 cur = points[i];
