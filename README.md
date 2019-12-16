@@ -6,3 +6,4 @@ by specifying tangent vectors
 * JarvisConvexHull - create convex hull for the set of points on the plane
 * RectangularRegionPointsCount - count points on the plane
 that belong to the specified rectangular region
+* IsometricProjection - play with isometric projections of 3D object
